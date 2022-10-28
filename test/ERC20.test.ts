@@ -3,7 +3,7 @@ import { HelloWorld__factory, HelloWorld } from "../typechain-types"
 import { ethers as hardhat } from "hardhat"
 import { expect } from "chai"
 
-describe("Lua Token", () => {
+describe("Hello Contract", () => {
     let HelloWorldContract: HelloWorld
     let owner: SignerWithAddress
     let addrs: SignerWithAddress[]
