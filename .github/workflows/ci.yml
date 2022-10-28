@@ -1,4 +1,4 @@
-name: On-chain
+name: Contract CI
 
 on: push
 
