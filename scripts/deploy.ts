@@ -3,7 +3,6 @@ import hardhat from "hardhat"
 async function deploy() {
     console.log("🕐 Deploying Hello World Contract")
     const owner = (await hardhat.ethers.getSigners())[0]
-    console.log(owner.toJSON())
 
     const contractFactory = await hardhat.ethers.getContractFactory(
         "HelloWorld"
