@@ -1,6 +1,7 @@
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers"
 import { HelloWorld__factory, HelloWorld } from "../typechain-types"
 import { ethers as hardhat } from "hardhat"
+import { expect } from "chai"
 
 describe("Hello World Contract", () => {
     /**
@@ -31,7 +32,7 @@ describe("Hello World Contract", () => {
         })
     })
 
-    describe("Deployment", () => {
+    describe("Hello World Message", () => {
         it("Should return `Hello World` from msg ", async () => {
             const msg = await hw.connect(owner).msg()
             expect(msg).to.equal("Hello World")
